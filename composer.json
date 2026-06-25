@@ -1,0 +1,10 @@
+{
+  "name": "profilo/user-portal",
+  "description": "Register / Login / Profile demo — MySQL for identity, MongoDB for extended profile fields, Redis for sessions.",
+  "require": {
+    "php": ">=8.0",
+    "ext-mysqli": "*",
+    "ext-redis": "*",
+    "mongodb/mongodb": "^2.0"
+  }
+}

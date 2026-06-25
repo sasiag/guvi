@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My profile · Profilo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="profile-shell">
+  <div class="id-card">
+
+    <header class="id-card-header">
+      <div class="avatar-initials" id="avatarInitials">--</div>
+      <div class="id-card-id">
+        <h2 id="displayName">Loading…</h2>
+        <div class="id-username" id="displayUsername">&nbsp;</div>
+      </div>
+      <div class="id-card-actions">
+        <button type="button" id="logoutBtn">Sign out</button>
+      </div>
+    </header>
+
+    <div class="id-card-body">
+      <div id="profileAlertBox" class="alert d-none mb-4" role="alert"></div>
+
+      <span class="eyebrow">Account</span>
+      <h3 class="field-section-title">Basic details</h3>
+      <p class="field-section-sub">Set when you registered. Your username and email can't be changed here.</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" disabled>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" disabled>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full name</label>
+        <input type="text" class="form-control" id="fullName" placeholder="Your full name">
+      </div>
+
+      <hr class="divider">
+
+      <span class="eyebrow">Personal</span>
+      <h3 class="field-section-title">Profile details</h3>
+      <p class="field-section-sub">Add or update these any time — they're only visible to you.</p>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" min="0" max="130" class="form-control" id="age" placeholder="e.g. 29">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="dob" class="form-label">Date of birth</label>
+          <input type="date" class="form-control" id="dob">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="contact" class="form-label">Contact number</label>
+          <input type="text" class="form-control" id="contact" placeholder="e.g. +91 1234567890">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea class="form-control" id="address" rows="3" placeholder="Street, city, state, postal code"></textarea>
+      </div>
+
+      <div class="d-flex gap-2 mt-4">
+        <!--<button type="button" id="editBtn" class="btn btn-brand">Edit</button>-->
+        <div class="saveprofileBlock">
+        <button type="button" id="updateBtn" class="btn btn-brand">Save changes</button>
+        <button type="button" id="resetBtn" class="btn btn-outline-brand">Discard changes</button>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>
